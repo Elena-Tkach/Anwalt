@@ -1,0 +1,421 @@
+.btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  transition: 0.6s;
+  padding: 0;
+}
+
+.btn--menu {
+  background: url("/img/menu.svg") no-repeat center center;
+}
+
+.btn--close {
+  background: url("/img/close-b.svg") no-repeat;
+  background-position: 70% 52%;
+}
+
+.btn--radius50 {
+  border-radius: 50%;
+}
+
+.link {
+  position: relative;
+  transition: 0.6s;
+}
+
+.link--absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.link--h:hover,
+.link--h:focus {
+  opacity: 1;
+  color: var(--gold);
+}
+.link--btn {
+  transition: 0.6s;
+}
+
+.link--h::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link--logo:hover,
+.link--logo:focus {
+  opacity: var(--opacity05);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.link--first {
+  font-size: 10px;
+  color: var(--blue-dark);
+  font-weight: 500;
+}
+
+.link--second {
+  font-size: 10px;
+  color: var(--blue-dark);
+  font-weight: 500;
+}
+
+.form__btn-container .link--second {
+  font-size: 10px;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.link--main {
+  position: relative;
+  width: 206px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gold);
+  /* box-shadow: 0 0 1px 1px var(--gold); */
+  transition: 0.6s;
+}
+
+.team-member__link.link--main {
+  width: 200px;
+  height: 32px;
+}
+
+.link--main::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  right: 0%;
+  height: 1px;
+  width: 105%;
+  background-color: var(--gold);
+  transition: 0.6s;
+}
+.link--main::before {
+  position: absolute;
+  content: "";
+  left: -5px;
+  right: 0%;
+  bottom: -5px;
+  height: 1px;
+  width: 105%;
+  background-color: var(--gold);
+  transition: 0.6s;
+}
+
+.btn-line,
+.btn-line2 {
+  position: relative;
+}
+.btn-line::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -4px;
+  right: 0%;
+  height: 46px;
+  width: 1px;
+  background-color: var(--gold);
+}
+
+.btn-line2::before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 3px;
+  height: 46px;
+  width: 1px;
+  background-color: var(--gold);
+}
+
+.btn-line-team.btn-line::after,
+.btn-line-team.btn-line2::before {
+  height: 41px;
+}
+
+.slider-btn {
+  z-index: 11;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate3d(0, -50%, 0);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn--prev {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background: url("/img/prev.png") no-repeat center center;
+  transform: translate3d(-28px, 0, 0);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+.btn--next {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background: url("/img/next.png") no-repeat center center;
+  transform: translate3d(28px, 0, 0);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+.btn--style {
+  opacity: 0.6;
+  z-index: 9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 142px;
+  height: 54px;
+  padding: 8px;
+
+  background-color: var(--blue-dark);
+  border: 2px solid var(--blue-light);
+}
+.btn--radius {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.btn--radius-mirror {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.js-active.btn--style {
+  opacity: 1;
+  z-index: 10;
+  background-color: var(--blue-light);
+}
+
+.btn--service {
+  cursor: pointer;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  transition: 0.6s;
+}
+
+.service-icon::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  /* border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px; */
+  transition: 0.6s;
+}
+.service-icon-1::after {
+  background: url("/img/1-mob.svg") no-repeat center center;
+}
+
+.service-icon-2::after {
+  background: url("/img/2-mob.svg") no-repeat center center;
+}
+
+.service-icon-3::after {
+  background: url("/img/3-mob.svg") no-repeat center center;
+}
+
+.service-icon-4::after {
+  background: url("/img/4-mob.svg") no-repeat center center;
+}
+
+.service-icon-5::after {
+  background: url("/img/5-mob.svg") no-repeat center center;
+}
+
+.service-icon-6::after {
+  background: url("/img/6-mob.svg") no-repeat center center;
+}
+.service-icon-7::after {
+  background: url("/img/7-mob.svg") no-repeat center center;
+}
+.service-icon-8::after {
+  background: url("/img/8-mob.svg") no-repeat center center;
+}
+.service-icon-9::after {
+  background: url("/img/9-mob.svg") no-repeat center center;
+}
+.service-icon-10::after {
+  background: url("/img/10-mob.svg") no-repeat center center;
+}
+
+@media (hover: hover) {
+  .btn--h:hover,
+  .btn--h:focus {
+    opacity: var(--opacity05);
+    box-shadow: 0 0 12px var(--gold);
+  }
+
+  .link--btn:hover,
+  .link--btn:focus {
+    box-shadow: 0 0 12px var(--gold);
+  }
+
+  .link--h:hover::after {
+    opacity: 1;
+    color: var(--gold);
+    transform: scaleX(1);
+  }
+
+  .btn--menu:hover,
+  .btn--menu:focus {
+    background: url("/img/menu-h2.svg") no-repeat center center;
+  }
+
+  .btn--prev:hover,
+  .btn--next:hover,
+  .btn--prev:active,
+  .btn--next:active {
+    border: 1px solid var(--gold);
+  }
+
+  .link--main:hover {
+    color: var(--white);
+    background-image: none;
+  }
+
+  .form__btn-container .link--second:hover {
+    color: var(--blue-dark);
+    background-image: linear-gradient(
+      45deg,
+      var(--gradient-start),
+      var(--gradient-end)
+    );
+  }
+  .btn--style:hover,
+  .btn--style:active {
+    opacity: 1;
+    background-color: var(--blue-light);
+    border: 2px solid var(--blue-light);
+  }
+
+  .btn--service:hover.service-icon-1::after {
+    background: url("/img/1-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+
+  .btn--service:hover.service-icon-2::after {
+    background: url("/img/2-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+  .btn--service:hover.service-icon-3::after {
+    background: url("/img/3-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+
+  .btn--service:hover.service-icon-4::after {
+    background: url("/img/4-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+
+  .btn--service:hover.service-icon-5::after {
+    background: url("/img/5-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+
+  .btn--service:hover.service-icon-6::after {
+    background: url("/img/6-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+
+  .btn--service:hover.service-icon-7::after {
+    background: url("/img/7-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+  .btn--service:hover.service-icon-8::after {
+    background: url("/img/8-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+  .btn--service:hover.service-icon-9::after {
+    background: url("/img/9-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+  .btn--service:hover.service-icon-10::after {
+    background: url("/img/10-mob-h.svg") no-repeat center center
+      var(--blue-light);
+  }
+
+  .btn--service:hover .service-title,
+  .btn--service:active .service-title {
+    color: var(--gold);
+  }
+}
+
+@media (hover: none) {
+  .btn--menu:hover,
+  .btn--menu:focus,
+  .btn--menu:active {
+    border: 1px solid var(--gold);
+  }
+  .link--main:hover,
+  .link--main:active {
+    color: var(--white);
+  }
+
+  .link--second:hover,
+  .link--second:active {
+    color: var(--gold);
+  }
+
+  .btn--prev:hover,
+  .btn--next:hover,
+  .btn--prev:active,
+  .btn--next:active {
+    border: 1px solid var(--gold);
+  }
+
+  .btn--style:hover {
+    opacity: 1;
+  }
+  .btn--style .btn-text:hover {
+    font-size: 12px;
+    font-style: 600;
+    color: var(--white);
+  }
+
+  .btn--service:hover .service-title,
+  .btn--service:active .service-title {
+    color: var(--gold);
+  }
+}

@@ -1,0 +1,342 @@
+.menu-container {
+  z-index: 20;
+  position: fixed;
+  background-color: #1520302f;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.6s;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.menu {
+  max-width: 80%;
+  position: relative;
+  padding: 20px 20px 40px;
+  height: 100%;
+}
+
+.menu--bg {
+  background-color: var(--blue-light);
+}
+
+.lang-container {
+  padding: 5px 8px;
+  border: 1px solid var(--blue-dark);
+}
+
+.link--lang {
+  font-size: 12px;
+  opacity: var(--opacity05);
+  color: var(--gold);
+}
+
+.link--text {
+  letter-spacing: 1px;
+}
+
+.menu__span {
+  color: var(--gold);
+  font-size: 14px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+.socials-icon:last-child {
+  margin-right: 0;
+}
+
+.socials-icon:nth-child(1) {
+  background: url("/img/instagram.svg") no-repeat center center;
+}
+
+.socials-icon:nth-child(2) {
+  background: url("/img/whatsapp.svg") no-repeat center center;
+}
+
+.socials-icon:nth-child(3) {
+  background: url("/img/telegram.svg") no-repeat center center;
+}
+
+.subtitle-gradient-mob {
+  background-image: linear-gradient(
+    196deg,
+    var(--gradient-start) 20%,
+    var(--gradient-end)
+  ); /* Градиент */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* кнопка главная  */
+
+.about__name {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.img-container--row {
+  width: 150px;
+  height: 200px;
+  position: relative;
+}
+
+.img-container--row::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/img/cirle-mob.svg") no-repeat top center;
+  transform: translate3d(10px, 30px, 0);
+}
+
+.break-logo {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate3d(0, 22px, 0);
+}
+
+.break-line--after,
+.break-line--before {
+  position: relative;
+}
+
+.break-line--after::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background: var(--blue-light);
+  transform: translate3d(-90px, -50%, 0);
+}
+.break-line--before::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 80px;
+  height: 1px;
+  background: var(--blue-light);
+  transform: translate3d(90px, -50%, 0);
+}
+
+.break-line-gold::after,
+.break-line-gold::before {
+  height: 0.1px;
+  background: var(--gold);
+}
+.step-number--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step__number {
+  z-index: 10;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.step--icon-rifht,
+.step--icon-left {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.step--icon-rifht::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("/img/num-right-mob.svg") no-repeat center center;
+}
+.step--icon-left::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("/img/num-left-mob.svg") no-repeat center center;
+}
+
+.address__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+.map-icon:nth-child(1) {
+  background: url("/img/google-maps.svg") no-repeat center center;
+}
+.map-icon:nth-child(2) {
+  background: url("/img/yandex-maps.svg") no-repeat center center;
+}
+.map-icon:nth-child(3) {
+  background: url("/img/gis-maps.svg") no-repeat center center;
+}
+
+@media (hover: hover) {
+  .map-icon:hover,
+  .map-icon:active,
+  .socials-icon:hover,
+  .socials-icon:active {
+    opacity: 0.6;
+    box-shadow: 0 0 10px 1px var(--gold);
+  }
+}
+
+@media (hover: none) {
+  .map-icon:hover,
+  .map-icon:active,
+  .socials-icon:hover,
+  .socials-icon:active {
+    opacity: 0.6;
+    box-shadow: 0 0 10px 1px var(--gold);
+  }
+}
+
+.js-active {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  transform: translate3d(0, 0, 0);
+}
+.js-active.services-container-pos {
+  position: relative;
+}
+
+/* js интрактив */
+.js-lang-active {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .step--icon-rifht,
+  .step--icon-left {
+    width: 80px;
+    height: 80px;
+  }
+
+  .step--icon-rifht::before {
+    transition: all 0.6s;
+    background: url("/img/num-right-blue.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  .step--icon-left::before {
+    transition: all 0.6s;
+    background: url("/img/num-left-blue.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  .js-visible .step--icon-left::before {
+    background: url("/img/num-left.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  .js-visible .step--icon-rifht::before {
+    background: url("/img/num-right.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  .step-line {
+    position: absolute;
+    bottom: 0;
+
+    width: 91px;
+    height: 108px;
+  }
+
+  .step-line-right {
+    right: 0;
+    transform: translate3d(85px, -10px, 0) rotate(10deg);
+    transition: all 0.6s;
+    background: url("/img/a-left-blue.svg") no-repeat center right;
+    background-size: contain;
+  }
+
+  .step-line-left {
+    left: 0;
+    transform: translate3d(-85px, -10px, 0) rotate(-10deg);
+    background: url("/img/a-right-bllue.svg") no-repeat center right;
+    background-size: contain;
+  }
+  .js-visible .step-line-right {
+    background: url("/img/a-left.svg") no-repeat center right;
+    background-size: contain;
+  }
+
+  .js-visible .step-line-left {
+    background: url("/img/a-right.svg") no-repeat center right;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1200px) {
+  .step__number {
+    font-size: 32px;
+  }
+
+  .step-line {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .step-line-right {
+    transform: translate3d(85px, 10px, 0) rotate(10deg);
+  }
+  .step-line-left {
+    transform: translate3d(-85px, 10px, 0) rotate(-10deg);
+  }
+}
+
+@media (min-width: 1440px) {
+  .step-line-right {
+    transform: translate3d(85px, 10px, 0) rotate(10deg);
+  }
+  .step-line-left {
+    transform: translate3d(-85px, 10px, 0) rotate(-10deg);
+  }
+}

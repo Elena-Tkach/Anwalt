@@ -1,0 +1,84 @@
+.vertical-line {
+  position: relative;
+  margin: 0 8px 0 2px;
+}
+
+.vertical-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  height: 15px;
+  width: 2px;
+  background-color: var(--blue-dark);
+  transform: translate3d(-50%, -50%, 0);
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.z-ix-10 {
+  z-index: 10;
+  position: relative;
+}
+.opacity-05 {
+  opacity: 0.5;
+}
+
+.gorizontal-line {
+  position: relative;
+}
+
+.gorizontal-line::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 0%;
+  height: 1px;
+  width: 80%;
+  background-color: var(--blue-dark);
+  transform: translate3d(-50%, 0, 0);
+}
+.section-bg {
+  background-color: var(--blue-dark);
+}
+.section-p {
+  padding: 60px 0;
+}
+.about.section-p {
+  padding: 40px 0 0;
+}
+
+.stages.section-p {
+  padding: 60px 0 0;
+}
+
+.mobile-none {
+  display: none;
+}
+
+.color-gold {
+  color: var(--gold);
+}
+
+.contact-bg {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/img/biblio-320.jpg") no-repeat top center;
+  background-size: cover;
+}
+.text-center {
+  text-align: center;
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+.mb-2 {
+  margin-bottom: 10px;
+}

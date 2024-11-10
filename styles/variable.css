@@ -1,0 +1,100 @@
+:root {
+  --gold: #d2b99d;
+  --white: #cdcdcd;
+  --blue-light: #2b3745;
+  --blue-dark: #152030;
+  --gradient-start: #f5f5f5; /* Начальный цвет */
+  --gradient-end: #ae8e73; /* Конечный цвет */
+
+  --linear-gradient-180: linear-gradient(
+    180deg,
+    var(--blue-dark) 0%,
+    #192536d1 51%,
+    #94bbe900 100%
+  );
+  --gradient-linear-gold: linear-gradient(
+    45deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+
+  --opacity05: 0.5;
+}
+
+.gradient-bg {
+  transition: 0.6s;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  ); /* Для старых браузеров WebKit */
+  background-image: -moz-linear-gradient(
+    45deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  ); /* Для Firefox */
+  background-image: -o-linear-gradient(
+    45deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  ); /* Для старых браузеров Opera */
+  background-image: -ms-linear-gradient(
+    45deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  ); /* Для старых версий Internet Explorer */
+
+  background-image: linear-gradient(
+    45deg,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+}
+.gradient-bg-mirror {
+  background-image: linear-gradient(
+    45deg,
+    var(--gradient-end),
+    var(--gradient-start)
+  ); /* Зеркальный градиент */
+  background-image: -webkit-linear-gradient(
+    45deg,
+    var(--gradient-end),
+    var(--gradient-start)
+  ); /* Для старых браузеров WebKit */
+  background-image: -moz-linear-gradient(
+    45deg,
+    var(--gradient-end),
+    var(--gradient-start)
+  ); /* Для Firefox */
+  background-image: -o-linear-gradient(
+    45deg,
+    var(--gradient-end),
+    var(--gradient-start)
+  ); /* Для старых браузеров Opera */
+  background-image: -ms-linear-gradient(
+    45deg,
+    var(--gradient-end),
+    var(--gradient-start)
+  ); /* Для старых версий Internet Explorer */
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+    196deg,
+    var(--gradient-start) 20%,
+    var(--gradient-end)
+  ); /* Градиент */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-text-mirror {
+  background-image: linear-gradient(
+    196deg,
+    var(--gradient-start) 20%,
+    var(--gradient-end)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

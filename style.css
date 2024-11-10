@@ -1,0 +1,13 @@
+@import "/styles/normalize.css";
+@import "/styles/variable.css";
+@import "/styles/fonts.css";
+@import "/styles/global.css";
+@import "/styles/main.css";
+@import "/styles/btns.css";
+@import "/styles/sections.css";
+@import "/styles/aside.css";
+@import "/styles/elements.css";
+@import "/styles/form.css";
+@import "/styles/content-modal.css";
+
+@import "/styles/adaptive.css";
