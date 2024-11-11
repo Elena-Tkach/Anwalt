@@ -15,25 +15,26 @@ export const sendMail = () => {
       let errors = [];
 
       // Проверка на пустые поля
-      if (!name) {
-        errors.push("Пожалуйста, введите ваше имя.");
-      }
+      //   if (!name) {
+      //     errors.push("Пожалуйста, введите ваше имя.");
+      //   }
 
       if (!phone) {
         errors.push("Пожалуйста, введите телефон.");
-      } else if (!/^\+7[0-9]{1,15}$/.test(phone)) {
+      } else if (!/^\+?[0-9]{1,15}$/.test(phone)) {
         errors.push(
-          "Неверный формат телефона. Верный форма: +7 (___) ___-__-__"
+          `Неверный формат телефона. Используйте только цифры.
+		  Верный форма: 8 (___) ___-__-__`
         );
       }
-      // Если есть ошибки, выводим их и не отправляем форму
-      if (errors.length > 0) {
-        const errorMessages = errors.join("<br>");
-        document.getElementById("response-message").innerHTML =
-          `<p style="color: red;">${errorMessages}</p>`;
-        document.getElementById("response-message").style.display = "block";
-        return;
-      }
+      //   // Если есть ошибки, выводим их и не отправляем форму
+      //   if (errors.length > 0) {
+      //     const errorMessages = errors.join("<br>");
+      //     document.getElementById("response-message").innerHTML =
+      //       `<p style="color: red;">${errorMessages}</p>`;
+      //     document.getElementById("response-message").style.display = "block";
+      //     return;
+      //   }
 
       // Если ошибок нет, отправляем данные на сервер
       const formData = new FormData();
@@ -48,17 +49,20 @@ export const sendMail = () => {
         .then((response) => response.json())
         .then((data) => {
           if (data.success) {
-            onShowMenu(popup);
+            // console.log("True", data.message);
             // document.getElementById("response-message").innerHTML =
             //   `<p style="color: green;">${data.message}</p>`;
-            document.getElementById("contact-form").reset();
+            onShowMenu(popup);
+            document.querySelector(".js-form").reset();
           } else {
-            document.getElementById("response-message2").innerHTML =
+            console.log("Else", data.message);
+            document.getElementById("response-message").innerHTML =
               `<p style="color: red;">${data.message}</p>`;
           }
           document.getElementById("response-message").style.display = "block";
         })
         .catch((error) => {
+          console.log("error", error);
           document.getElementById("response-message").innerHTML =
             `<p style="color: red;">Произошла ошибка. Пожалуйста, попробуйте позже.</p>`;
           document.getElementById("response-message").style.display = "block";
