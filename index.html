@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Raleway:wght@100..900&display=swap"
         rel="stylesheet">
@@ -525,7 +532,7 @@
                             <input class="form__input input--size input--font js-name" type="text" name="name" required
                                 placeholder="Ваше Имя*:">
                             <input class="form__input input--size input--font js-phone" type="tel" name="phone" required
-                                placeholder="Телефон*:">
+                                placeholder="Телефон*: +7 (___) ___-__-__">
                             <textarea class="form__textarea form__input input--font js-message" name="message"
                                 placeholder="Сообщение"></textarea>
                         </fieldset>
@@ -643,7 +650,6 @@
         <div class="container">
             <div class="footer__logo">
                 <div class="break-logo">
-
                     <span class="break-logo__line break-line--after break-line-gold"></span>
                     <a href="/" class="link link--logo">
                         <img class="break-logo__logo" src="/img/logo.svg" alt="LOGO" loading="lazy">
@@ -665,34 +671,36 @@
         </div>
     </footer>
 
-    <div class=" popup popup--color popup--hidden js-popup" role="dialog" aria-modal="true" style="display: none;">
+    <div class=" popup popup--color popup--hidden" role="dialog" aria-modal="true">
         <div class="popup__dialog">
             <div class="popup__header">
-                <button type="button" class="popup__btn btn btn-close js_btn-closePopup"
-                    aria-label="Закрыть окно"></button>
+                <button class="modal__btn btn btn--h btn--close btn--radius50 js-close-btn"
+                    aria-label="Закрыть модальное окно" type="button"></button>
+
             </div>
             <div class="popup__body">
-                <h4 class="popup____title">Заявка успешно отправлена.</h4>
-                <p class="popup____text">В ближайшее <span class="color-gold">рабочее</span> время мы
+                <h4 class="popup__title playfair-400 gradient-text">Заявка успешно отправлена.</h4>
+
+                <p class="popup__text" id="response-message">В ближайшее <span class="color-gold">рабочее</span> время
+                    мы
                     свяжемся с вами!
                 </p>
 
             </div>
-            <div class="popup____logo">
-                <span class="line-left  line-left--wh-small bg-gold"></span>
+            <div class="popup__logo break-logo">
+                <span class="line-left  break-line--after break-line-gold"></span>
                 <picture>
                     <source srcset="img/logo-b-mobile.svg" media="(max-width: 600px)">
-                    <!-- <source srcset="image-medium.jpg" media="(max-width: 1200px)"> -->
                     <img class="popup__logo logo-img" src="img/logo.svg" alt="Логотип Anwalt" loading="lazy">
                 </picture>
-                <span class="line-right  line-right--wh-small bg-gold"></span>
+                <span class="line-right  break-logo__line break-line--before break-line-gold"></span>
             </div>
 
         </div>
     </div>
 
 
-    <div class="services__modal modal " role="dialog" aria-modal="true">
+    <div class="services__modal modal js-modal" role="dialog" aria-modal="true">
         <div class="modal__container">
             <button class="modal__btn btn btn--h btn--close btn--radius50 js-close-btn"
                 aria-label="Закрыть модальное окно" type="button"></button>

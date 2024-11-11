@@ -1,3 +1,6 @@
+import { onShowMenu } from "./menu.js";
+import { popup } from "./router.js";
+
 export const sendMail = () => {
   document
     .querySelector(".js-form")
@@ -18,15 +21,11 @@ export const sendMail = () => {
 
       if (!phone) {
         errors.push("Пожалуйста, введите телефон.");
-      } else if (!/^\+?[0-9]{1,15}$/.test(phone)) {
-        // Проверка на правильность формата телефона
-        errors.push("Неверный формат телефона.");
+      } else if (!/^\+7[0-9]{1,15}$/.test(phone)) {
+        errors.push(
+          "Неверный формат телефона. Верный форма: +7 (___) ___-__-__"
+        );
       }
-
-      if (!message) {
-        errors.push("Пожалуйста, введите сообщение.");
-      }
-
       // Если есть ошибки, выводим их и не отправляем форму
       if (errors.length > 0) {
         const errorMessages = errors.join("<br>");
@@ -49,12 +48,12 @@ export const sendMail = () => {
         .then((response) => response.json())
         .then((data) => {
           if (data.success) {
-            console.log(data.message);
-            document.getElementById("response-message").innerHTML =
-              `<p style="color: green;">${data.message}</p>`;
+            onShowMenu(popup);
+            // document.getElementById("response-message").innerHTML =
+            //   `<p style="color: green;">${data.message}</p>`;
+            document.getElementById("contact-form").reset();
           } else {
-            console.log(data.message);
-            document.getElementById("response-message").innerHTML =
+            document.getElementById("response-message2").innerHTML =
               `<p style="color: red;">${data.message}</p>`;
           }
           document.getElementById("response-message").style.display = "block";

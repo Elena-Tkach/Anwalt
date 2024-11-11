@@ -1,8 +1,10 @@
 import { onShowMenu, onHideMenu } from "./menu.js";
 import { checkWindowTop, checkVisibility } from "./utils.js";
+export const popup = document.querySelector(".js-popup");
 
 export const handleClick = () => {
   const menuContain = document.querySelector(".menu-container");
+  const modalContant = document.querySelector(".js-modal");
   const btnCloseEl = document.querySelector(".js-close-btn");
   const blocks = document.querySelectorAll(".js-services");
   const stepLines = document.querySelectorAll(".js-step");
@@ -17,10 +19,23 @@ export const handleClick = () => {
 
     if (target.classList.contains("js-close-btn")) {
       onHideMenu(menuContain);
+      if (popup) {
+        onHideMenu(popup);
+      }
+      if (modalContant) {
+        onHideMenu(modalContant);
+      }
     }
 
     if (target.classList.contains("js-active")) {
       onHideMenu(menuContain);
+
+      if (popup) {
+        onHideMenu(popup);
+      }
+      if (modalContant) {
+        onHideMenu(modalContant);
+      }
     }
 
     if (target.classList.contains("menu__link")) {
