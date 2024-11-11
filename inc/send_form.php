@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$to = "tcachelena@gmail.com"; // Укажите ваш email
 		$subject = "Новое сообщение с сайта";
 		$body = "Имя: $name\nТелефон: $phone\nСообщение:\n$message";
-		$headers = "From: no-reply@yourdomain.com";
+		$headers = "From: Anwalt@yourdomain.com";
 
 		if (mail($to, $subject, $body, $headers)) {
 			$response['success'] = true;
