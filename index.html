@@ -520,13 +520,13 @@
                             class="uppercase title--second-big">Запишитесь</span> <br>
                         на бесплатную консультацию</h2>
 
-                    <form class="contact-form__form form z-ix-10" action="#" method="post">
+                    <form class="contact-form__form form z-ix-10 js-form" action="#" method="post">
                         <fieldset class="form__group">
-                            <input class="form__input input--size input--font " type="text" name="name" required
+                            <input class="form__input input--size input--font js-name" type="text" name="name" required
                                 placeholder="Ваше Имя*:">
-                            <input class="form__input input--size input--font " type="tel" name="phone" required
+                            <input class="form__input input--size input--font js-phone" type="tel" name="phone" required
                                 placeholder="Телефон*:">
-                            <textarea class="form__textarea form__input input--font " name="message"
+                            <textarea class="form__textarea form__input input--font js-message" name="message"
                                 placeholder="Сообщение"></textarea>
                         </fieldset>
 
@@ -539,6 +539,7 @@
                         <div class="text-center  text-small opacity-05"><small>*Обязательнo к заполнению</small>
                         </div>
                     </form>
+                    <div id="response-message" style="display: none;"></div>
                 </div>
             </div>
         </section>
