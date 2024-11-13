@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	// Простейшая валидация
 	if (empty($name) || empty($phone)) {
 		$response['message'] = 'Поля с звездочкой обязательны для заполнения.';
-	} elseif (!preg_match('/^\+7[0-9]{1,15}$/', $phone)) {
-		$response['message'] = 'Неверный формат телефона. Верный форма: +7 (___) ___-__-__"';
+	} elseif (!preg_match('/^\+?[0-9]{1,15}$/', $phone)) {
+		$response['message'] = 'Неверный формат телефона. Верный форма: 8 (___) ___-__-__"';
 	} else {
 		// Обработка данных (например, отправка email)
 		$to = "tcachelena@gmail.com"; // Укажите ваш email

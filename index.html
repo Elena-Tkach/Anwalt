@@ -437,42 +437,49 @@
                 <div class="services__wrap">
                     <div
                         class="services__container services-container-pos services-container--border js-services js-active mb-3">
-                        <h3 class="services__title-third title--third-play gradient-text playfair-400 mobile-none">
+                        <h3 class="services__title-third title--third-play gradient-text playfair-400 mobile-none ">
                             Услуги для
                             бизнеса</h3>
                         <ul class="services__list list-none">
                             <li class="services__item">
-                                <button class="service-item__btn  btn--service service-icon service-icon-1">
+                                <button class="service-item__btn  btn--service service-icon service-icon-1"
+                                    data-modal="modal1">
 
                                     <span class="service-title service-title--margin">Регистрация и перерегистрация
                                         юридических лиц (ТОО)</span>
                                 </button>
                             </li>
                             <li class="services__item">
-                                <button class="service-item__btn btn--service service-icon service-icon-2">
+                                <button class="service-item__btn btn--service service-icon service-icon-2"
+                                    data-modal="modal2">
                                     <span class="service-title service-title--margin">Составление договоров</span>
                                 </button>
                             </li>
 
                             <li class="services__item">
-                                <button class="service-item__btn btn--service service-icon service-icon-3">
+                                <button class="service-item__btn btn--service service-icon service-icon-3"
+                                    data-modal="modal3">
                                     <span class="service-title service-title--margin">Представительство в судах</span>
                                 </button>
                             </li>
                             <li class="services__item">
-                                <button class="service-item__btn btn--service service-icon service-icon-4">
-                                    <span class="service-title service-title--margin">Абонентское
+                                <button class="service-item__btn btn--service service-icon service-icon-4"
+                                    data-modal="modal4">
+                                    <span class=" service-title service-title--margin">Абонентское
                                         юридическое обслуживание</span>
                                 </button>
                             </li>
                             <li class="services__item">
-                                <button class="service-item__btn btn--service service-icon service-icon-5">
-                                    <span class="service-title service-title--margin">Регистрация товарных знаков</span>
+                                <button class="service-item__btn btn--service service-icon service-icon-5"
+                                    data-modal="modal5">
+                                    <span class=" service-title service-title--margin">Регистрация товарных
+                                        знаков</span>
                                 </button>
                             </li>
                             <li class="services__item">
-                                <button class="service-item__btn btn--service service-icon service-icon-6">
-                                    <span class="service-title service-title--margin">Государственная регистрация
+                                <button class="service-item__btn btn--service service-icon service-icon-6"
+                                    data-modal="modal6">
+                                    <span class=" service-title service-title--margin">Государственная регистрация
                                         выпуска негосударственных облигаций</span>
                                 </button>
                             </li>
@@ -486,25 +493,29 @@
                         </h3>
                         <ul class="services__list list-none">
                             <li class="services__item">
-                                <button class="service-item__btn btn--service service-icon service-icon-7">
-                                    <span class="service-title service-title--margin">Консультации по
+                                <button class="service-item__btn btn--service service-icon service-icon-7"
+                                    data-modal="modal7">
+                                    <span class=" service-title service-title--margin">Консультации по
                                         гражданским делам</span>
                                 </button>
                             </li>
                             <li class="services__item">
-                                <button class="service-item__btn btn--service service-icon service-icon-8">
-                                    <span class="service-title service-title--margin">Представительство в судах</span>
+                                <button class="service-item__btn btn--service service-icon service-icon-8"
+                                    data-modal="modal8">
+                                    <span class=" service-title service-title--margin">Представительство в судах</span>
                                 </button>
                             </li>
                             <li class="services__item">
-                                <button class="service-item__btn btn--service service-icon service-icon-9">
-                                    <span class="service-title service-title--margin">Семейное и наследственное
+                                <button class="service-item__btn btn--service service-icon service-icon-9"
+                                    data-modal="modal9">
+                                    <span class=" service-title service-title--margin">Семейное и наследственное
                                         право</span>
                                 </button>
                             </li>
                             <li class="services__item">
-                                <button class="service-item__btn btn--service service-icon service-icon-10">
-                                    <span class="service-title service-title--margin">Сделки с недвижимостью</span>
+                                <button class="service-item__btn btn--service service-icon service-icon-10"
+                                    data-modal="modal10">
+                                    <span class=" service-title service-title--margin">Сделки с недвижимостью</span>
                                 </button>
                             </li>
                         </ul>
@@ -707,90 +718,29 @@
                 aria-label="Закрыть модальное окно" type="button"></button>
 
             <div class="modal__header">
-                <h3 class="modal__title-third gradient-text playfair-400">Услуги для бизнеса</h3>
-                <h4 class="modal__title-main playfair-600">Юридическое обслуживание</h4>
+                <h3 class="modal__title-third gradient-text playfair-400 js-first-title"></h3>
+                <h4 class="modal__title-main playfair-600 js-modal-title"></h4>
                 <h5 class="modal__title-second color-gold">Тарифы:</h5>
             </div>
-            <ul class="modal__list list-center list-none">
-                <li class="modal__item modal-item">
-                    <h5 class="modal-item__title gradient-text-mirror  playfair-600">Старт</h5>
-                    <p class="modal-item__subtitle">от <span class="modal-item__price  playfair-400">80
-                            000</span> тенге
-                        в месяц
-                    </p>
-                    <p class="modal-item__content"> <span class="modal-item__bold">Услуги:</span>
-                        разработка и правовая экспертиза договоров (до 5 документов в месяц), подготовка писем,
-                        претензий, исковых
-                        заявлений, возражений (до 3 документов), устные консультации.
-                    </p>
-                    <p class="modal-item__content">
-                        Полная юридическая поддержка в разработке и проверке договоров с вашими партнерами, а также
-                        поможем в урегулировании
-                        претензий.
-                    </p>
-                    <p class="modal-item__content mt2"> <span class="modal-item__bold">Кому подходит:</span>
-                        Небольшой бизнес
-                    </p>
-                </li>
+            <ul class="modal__list  list-none js-list-modal">
 
-
-                <li class="modal__item modal-item">
-                    <h5 class="modal-item__title gradient-text playfair-400">Старт</h5>
-                    <p class="modal-item__subtitle">от <span class="modal-item__price">80 000</span>тенге в месяц
-                    </p>
-                    <p class="modal-item__content"> <span class="modal-item__bold">Услуги:</span>
-                        разработка и правовая экспертиза договоров (до 5 документов в месяц), подготовка писем,
-                        претензий, исковых
-                        заявлений, возражений (до 3 документов), устные консультации.
-                    </p>
-                    <p class="modal-item__content">
-                        Полная юридическая поддержка в разработке и проверке договоров с вашими партнерами, а также
-                        поможем в урегулировании
-                        претензий.
-                    </p>
-                    <p class="modal-item__content"> <span class="modal-item__bold">Кому подходит:</span>
-                        Небольшой бизнес
-                    </p>
-                </li>
-                <li class="modal__item modal-item">
-                    <h5 class="modal-item__title gradient-text playfair-400">Старт</h5>
-                    <p class="modal-item__subtitle">от <span class="modal-item__price">80 000</span>тенге в месяц
-                    </p>
-                    <p class="modal-item__content"> <span class="modal-item__bold">Услуги:</span>
-                        разработка и правовая экспертиза договоров (до 5 документов в месяц), подготовка писем,
-                        претензий, исковых
-                        заявлений, возражений (до 3 документов), устные консультации.
-                    </p>
-                    <p class="modal-item__content">
-                        Полная юридическая поддержка в разработке и проверке договоров с вашими партнерами, а также
-                        поможем в урегулировании
-                        претензий.
-                    </p>
-                    <p class="modal-item__content"> <span class="modal-item__bold">Кому подходит:</span>
-                        Небольшой бизнес
-                    </p>
-                </li>
-                <li class="modal__item modal-item">
-                    <h5 class="modal-item__title gradient-text playfair-400">Старт</h5>
-                    <p class="modal-item__subtitle">от <span class="modal-item__price">80 000</span>тенге в месяц
-                    </p>
-                    <p class="modal-item__content"> <span class="modal-item__bold">Услуги:</span>
-                        разработка и правовая экспертиза договоров (до 5 документов в месяц), подготовка писем,
-                        претензий, исковых
-                        заявлений, возражений (до 3 документов), устные консультации.
-                    </p>
-                    <p class="modal-item__content">
-                        Полная юридическая поддержка в разработке и проверке договоров с вашими партнерами, а также
-                        поможем в урегулировании
-                        претензий.
-                    </p>
-                    <p class="modal-item__content"> <span class="modal-item__bold">Кому подходит:</span>
-                        Небольшой бизнес
-                    </p>
-                </li>
             </ul>
         </div>
     </div>
+
+    <template class="js-template-item">
+        <li class=" item-font js-modal-card-item"></li>
+    </template>
+
+    <template class="js-teplate">
+        <li class="modal__item modal-item">
+            <h5 class="modal-item__title gradient-text-mirror  js-title-card-modal playfair-600"></h5>
+            <ul class="js-modal-card-list"></ul>
+            <p class="modal-item__content js-modal-card-description"></p>
+            <p class="modal-item__content js-modal-card-text"></p>
+        </li>
+    </template>
+
 
 </body>
 

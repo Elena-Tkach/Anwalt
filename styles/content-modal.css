@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  overflow-y: auto;
+  overflow: auto;
   padding: 15px 0;
 
   opacity: 0;
@@ -90,7 +90,12 @@
 }
 
 .modal-item__title {
-  font-size: 18px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.item-font {
+  font-size: 12px;
 }
 
 .modal-item__subtitle {
@@ -153,6 +158,10 @@
     margin-bottom: 20px;
   }
 
+  .item-font {
+    font-size: 16px;
+  }
+
   .modal__title-third {
     font-size: 16px;
     margin-bottom: 34px;
@@ -169,13 +178,15 @@
 
   .modal-item__content {
     font-size: 12px;
+    margin-top: 20px;
   }
   .modal-item__bold {
     font-size: 14px;
     font-weight: 600;
   }
   .modal-item__title {
-    font-size: 24px;
+    font-size: 18px;
+    margin-bottom: 15px;
   }
   .modal-item__price {
     font-size: 20px;
@@ -239,7 +250,11 @@
 .js-active {
   opacity: 1;
   visibility: visible;
-  overflow: visible;
+  overflow: auto;
   transition: all 0.6s;
   transform: translate3d(0, 0, 0);
+}
+
+.aside.js-active {
+  overflow: visible;
 }

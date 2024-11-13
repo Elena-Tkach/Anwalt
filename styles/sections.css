@@ -215,6 +215,10 @@
   transform: translate3d(-110%, 0, 0);
 }
 
+.service-title {
+  pointer-events: none;
+}
+
 .contact-form {
   position: relative;
 }
