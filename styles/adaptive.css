@@ -144,6 +144,7 @@
     justify-content: space-around;
     border-radius: 15px;
     backdrop-filter: blur(2px);
+    background-color: transparent;
   }
   .aside__list {
     height: 100%;
@@ -633,7 +634,8 @@
     max-width: 550px;
   }
   .stages__steps {
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
+    grid-column-gap: 40px;
   }
 
   .subtitle {
@@ -822,6 +824,11 @@
 
   .contacts.section-p {
     padding-bottom: 200px;
+  }
+
+  .stages__steps {
+    grid-row-gap: 36px;
+    grid-column-gap: 40px;
   }
 }
 

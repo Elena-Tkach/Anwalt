@@ -13,6 +13,10 @@
   background: url("/img/menu.svg") no-repeat center center;
 }
 
+.btn--menu-blue {
+  background: url("/img/menu-blue.svg") no-repeat center center;
+}
+
 .btn--close {
   background: url("/img/close-b.svg") no-repeat;
   background-position: 70% 52%;
@@ -240,8 +244,6 @@
   bottom: 0;
   width: 60px;
   height: 60px;
-  /* border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px; */
   transition: 0.6s;
 }
 .service-icon-1::after {
@@ -285,6 +287,10 @@
   .btn--h:focus {
     opacity: var(--opacity05);
     box-shadow: 0 0 12px var(--gold);
+  }
+
+  .btn--menu-blue:hover {
+    box-shadow: 0 0 12px var(--blue-light);
   }
 
   .link--btn:hover,
@@ -331,49 +337,39 @@
   }
 
   .btn--service:hover.service-icon-1::after {
-    background: url("/img/1-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/1-mob-h.svg") no-repeat center center;
   }
 
   .btn--service:hover.service-icon-2::after {
-    background: url("/img/2-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/2-mob-h.svg") no-repeat center center;
   }
   .btn--service:hover.service-icon-3::after {
-    background: url("/img/3-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/3-mob-h.svg") no-repeat center center;
   }
 
   .btn--service:hover.service-icon-4::after {
-    background: url("/img/4-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/4-mob-h.svg") no-repeat center center;
   }
 
   .btn--service:hover.service-icon-5::after {
-    background: url("/img/5-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/5-mob-h.svg") no-repeat center center;
   }
 
   .btn--service:hover.service-icon-6::after {
-    background: url("/img/6-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/6-mob-h.svg") no-repeat center center;
   }
 
   .btn--service:hover.service-icon-7::after {
-    background: url("/img/7-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/7-mob-h.svg") no-repeat center center;
   }
   .btn--service:hover.service-icon-8::after {
-    background: url("/img/8-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/8-mob-h.svg") no-repeat center center;
   }
   .btn--service:hover.service-icon-9::after {
-    background: url("/img/9-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/9-mob-h.svg") no-repeat center center;
   }
   .btn--service:hover.service-icon-10::after {
-    background: url("/img/10-mob-h.svg") no-repeat center center
-      var(--blue-light);
+    background: url("/img/10-mob-h.svg") no-repeat center center;
   }
 
   .btn--service:hover .service-title,

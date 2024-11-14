@@ -1,5 +1,5 @@
 .header {
-  z-index: 21;
+  z-index: 23;
   position: absolute;
   top: 0;
   left: 0;
@@ -224,7 +224,8 @@
 }
 
 .contact-form__title {
-  color: #e3e3e3;
+  /* color: #e3e3e3; */
+  letter-spacing: 1px;
   margin-bottom: 40px;
 }
 
@@ -320,6 +321,13 @@
 
 .services__btn .btn-text {
   pointer-events: none;
+}
+
+.address__link {
+  color: #a1a1a1;
+  font-size: 10px;
+  padding-top: 45px;
+  text-align: center;
 }
 
 @media (min-width: 375px) {

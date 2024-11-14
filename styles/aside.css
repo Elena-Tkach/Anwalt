@@ -6,9 +6,11 @@
 
   right: 0;
   width: 100%;
-  background-color: #ffffff00;
-  backdrop-filter: blur(5px);
-  border-top: 1px solid #2d394718;
+  background-color: var(--blue-dark);
+  /* background-color: var(--gold); */
+  /* backdrop-filter: bl
+  ur(5px); */
+  border-top: 1px solid #425365ba;
   transition: opacity 0.3s ease;
   padding: 5px 20px;
 }
@@ -39,7 +41,7 @@
 }
 
 .aside-icon:nth-child(2) {
-  background: url("/img/messaje.svg") no-repeat center center;
+  background: url("/img/whatsapp.svg") no-repeat center center;
   background-size: 30px;
 }
 .aside__link {

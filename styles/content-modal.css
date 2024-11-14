@@ -247,7 +247,7 @@
   }
 }
 
-.js-active {
+.modal.js-active {
   opacity: 1;
   visibility: visible;
   overflow: auto;
