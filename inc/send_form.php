@@ -17,9 +17,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		// Обработка данных (например, отправка email)
 		$to = "info@anwalt.kz"; // Укажите ваш email
 		$subject = "Новое сообщение с сайта";
-		$body = "Имя: $name\nТелефон: $phone\nСообщение:\n$message";
-		$headers = "From: Anwalt@yourdomain.com";
 
+		// Оформляем тело письма с правильной кодировкой
+		$body = "Имя: $name\nТелефон: $phone\nСообщение:\n$message";
+
+		// Заголовки для отправки письма с кодировкой UTF-8
+		$headers = "MIME-Version: 1.0" . "\r\n";
+		$headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n";
+		$headers .= "From: Anwalt@yourdomain.com" . "\r\n";
+		$headers .= "Reply-To: $name <$phone>" . "\r\n";
+
+		// Отправка письма
 		if (mail($to, $subject, $body, $headers)) {
 			$response['success'] = true;
 			$response['message'] = 'Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.';
