@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #15203088;
+  background-color: #152030bd;
 
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@
   max-width: 80%;
   height: auto;
   background-color: var(--blue-dark);
-  box-shadow: 0 0 5px #ffffff69;
+  box-shadow: 0 0 2px #ffffff69;
 }
 
 .modal__container::after {
@@ -244,6 +244,11 @@
     opacity: 0.5;
     background: url("/img/biblio-1024.png") no-repeat top center;
     background-size: cover;
+  }
+
+  .modal,
+  .popup {
+    align-items: center;
   }
 }
 

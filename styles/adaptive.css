@@ -827,8 +827,12 @@
   }
 
   .stages__steps {
-    grid-row-gap: 36px;
-    grid-column-gap: 40px;
+    grid-row-gap: 38px;
+    grid-column-gap: 34px;
+  }
+
+  .stages__item-content {
+    width: 70%;
   }
 }
 

@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$response['message'] = 'Неверный формат телефона. Верный форма: 8 (___) ___-__-__"';
 	} else {
 		// Обработка данных (например, отправка email)
-		$to = "tcachelena@gmail.com"; // Укажите ваш email
+		$to = "info@anwalt.kz"; // Укажите ваш email
 		$subject = "Новое сообщение с сайта";
 		$body = "Имя: $name\nТелефон: $phone\nСообщение:\n$message";
 		$headers = "From: Anwalt@yourdomain.com";

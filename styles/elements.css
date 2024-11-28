@@ -334,9 +334,9 @@
 
 @media (min-width: 1440px) {
   .step-line-right {
-    transform: translate3d(85px, 28px, 0) rotate(10deg);
+    transform: translate3d(85px, 24px, 0) rotate(10deg);
   }
   .step-line-left {
-    transform: translate3d(-85px, 28px, 0) rotate(-10deg);
+    transform: translate3d(-85px, 24px, 0) rotate(-10deg);
   }
 }
