@@ -85,3 +85,15 @@
 .bold {
   font-weight: 600;
 }
+
+.italic {
+  font-style: italic;
+}
+.f-num {
+  /* color: var(--gold); */
+  font-size: 24px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

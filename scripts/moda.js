@@ -1,5 +1,5 @@
-import { onShowMenu} from "./menu.js";
-import {services} from "./consts.js";
+import { onShowMenu } from "./menu.js";
+import { services } from "./consts.js";
 
 const createItem = (item) => {
   const templateItem = document.querySelector(".js-template-item");
@@ -54,6 +54,8 @@ export const updateModalContant = (modalId) => {
 
   modalFirstTitle.textContent = content.firstTitle;
   modalTitle.textContent = content.title;
+
+  document.body.classList.add("no-scroll");
 
   onShowMenu(modal, modal.querySelector(".js-close-btn"));
 };
