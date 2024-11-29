@@ -236,6 +236,7 @@
 
 @media (min-width: 1200px) {
   .modal__container {
+    margin-top: 25%;
     padding: 60px 40px;
     max-width: 976px;
   }
