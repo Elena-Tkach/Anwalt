@@ -200,9 +200,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 142px;
-  height: 54px;
-  padding: 8px;
+  /* width: 142px;
+  height: 54px; */
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
 
   background-color: var(--blue-dark);
   border: 2px solid var(--blue-light);

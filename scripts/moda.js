@@ -1,5 +1,5 @@
 import { onShowMenu } from "./menu.js";
-import { services } from "./consts.js";
+import { services, servicesKz } from "./consts.js";
 
 const createItem = (item) => {
   const templateItem = document.querySelector(".js-template-item");
@@ -39,8 +39,13 @@ export const updateModalContant = (modalId) => {
   const modalTitle = modal.querySelector(".js-modal-title");
   const modalLIst = modal.querySelector(".js-list-modal");
 
-  const content = services.find((service) => service.id === modalId);
+  const content = window.location.pathname.includes("kz")
+    ? servicesKz.find((service) => service.id === modalId)
+    : services.find((service) => service.id === modalId);
+  // const content = services.find((service) => service.id === modalId);
+
   modalLIst.innerHTML = "";
+
   for (let listItem of content.cardlist) {
     modalLIst.appendChild(
       teplateList(
