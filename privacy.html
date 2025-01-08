@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Raleway:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>Anwalt - Юридическая поддержка для бизнеса и частных лиц в Алматы</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css?v=4">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="index.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo">
+                    <a href="/" class="header__link link link--logo">
+                        <picture>
+                            <source srcset="img/logo-b-mobile.svg" media="(max-width: 600px)">
+                            <!-- <source srcset="image-medium.jpg" media="(max-width: 1200px)"> -->
+                            <img class="header__logo logo-img" src="img/logo.svg" alt="Логотип Anwalt" loading="lazy">
+                        </picture>
+                    </a>
+                </div>
+                <button class="header__btn btn btn--h btn--menu btn--radius50 js-open-menu"
+                    aria-label="Открыть меню"></button>
+
+                <div class="header__menu-container menu-container ">
+                    <nav class="header__nav menu menu--bg  ">
+                        <div class="menu__header">
+                            <div class="header__lang-container lang-container">
+                                <a href="kz" class="header__lang link--lang link link--h">Kz</a>
+                                <span class="vertical-line"></span>
+                                <a href="/" class="header__lang link--lang link link--h js-lang-active">Ru</a>
+                            </div>
+                            <button class="nav__btn btn btn--h btn--close btn--radius50 js-close-btn"
+                                aria-label="Закрыть меню"></button>
+                        </div>
+
+                        <ul class="menu__list list-none">
+                            <li class="menu__item"><a class="menu__link link link--h link--text" href="/">Главная</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link link  link--h link--text" href="#about">О
+                                    нас</a></li>
+                            <li class="menu__item"><a class="menu__link link  link--h link--text"
+                                    href="#services">Услуги</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__link link link--h link--text"
+                                    href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="gorizontal-line">
+                        </div>
+                        <div class="menu__contact">
+                            <p class="menu__phone"><span class="menu__span">Тел:</span>
+                                <a class="link link--h" href="tel:+77710309374">+7 ( 771 ) 030-93-74
+                                </a>
+                            </p>
+                            <ul class="menu__socials socials  list-none">
+                                <li class="socials__item socials-icon">
+                                    <a class="menu__social-link link--absolute link--btn btn--radius50"
+                                        href="https://www.instagram.com/anwaltpro/" aria-label="Instagram"
+                                        target="_blank" rel="noopener">
+                                    </a>
+                                </li>
+                                <li class="socials__item socials-icon">
+                                    <a class="menu__social-link link--absolute link--btn btn--radius50"
+                                        href="https://wa.me/77710309374" aria-label="WhatsApp" target="_blank"
+                                        rel="noopener">
+                                    </a>
+                                </li>
+                                <li class="socials__item socials-icon">
+                                    <a class="menu__social-link link--absolute link--btn btn--radius50"
+                                        href="https://t.me/Awaltpro" aria-label="Telegram" target="_blank"
+                                        rel="noopener">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="privacy__intro">
+                <div class="container__privacy-intro">
+                    <h1 class="playfair-600 title-privacy">Политика конфиденциальности</h1>
+                    <p class="mb-3">Последнее обновление: <time datetime="2025-01-08">8 января 2025 года</time></p>
+                    <h2 class="privacy-title-second">1. Общие положения</h2>
+                    <p>Настоящая Политика конфиденциальности (далее – «Политика») регулирует обработку и защиту
+                        персональных данных
+                        пользователей сайта <strong>anwalt.kz</strong> (далее – «Сайт»).</p>
+                    <ul>
+                        <li>Использование Сайта означает согласие пользователя с условиями Политики.</li>
+                        <li>Если пользователь не согласен с условиями Политики, он должен прекратить использование
+                            Сайта.</li>
+                        <li>Политика разработана в соответствии с законодательством Республики Казахстан.</li>
+                    </ul>
+
+                    <h2 class="privacy-title-second">2. Персональные данные, которые мы собираем</h2>
+                    <p>Мы можем собирать следующие данные:</p>
+                    <ul>
+                        <li>Имя и фамилия;</li>
+                        <li>Контактный телефон;</li>
+                        <li>Адрес электронной почты;</li>
+                        <li>Данные, предоставленные через формы обратной связи или при запросе консультации.</li>
+                    </ul>
+                    <p>Автоматически собираются:</p>
+                    <ul>
+                        <li>IP-адрес;</li>
+                        <li>Тип браузера и устройства;</li>
+                        <li>Информация о посещенных страницах и действиях на Сайте.</li>
+                    </ul>
+
+                    <h2 class="privacy-title-second">3. Цели сбора данных</h2>
+                    <ul>
+                        <li>Обеспечение работы Сайта и предоставления услуг.</li>
+                        <li>Обработка запросов и заявок пользователей.</li>
+                        <li>Анализ поведения пользователей для улучшения работы Сайта.</li>
+                        <li>Предоставление актуальной информации об услугах компании <strong>Anwalt</strong>.</li>
+                    </ul>
+
+                    <h2 class="privacy-title-second">4. Обработка и защита данных</h2>
+                    <ul>
+                        <li>Данные обрабатываются в строгом соответствии с законодательством Республики Казахстан.</li>
+                        <li>Мы принимаем меры для защиты данных от утраты, изменения и несанкционированного доступа.
+                        </li>
+                        <li>Доступ к данным имеют только уполномоченные сотрудники.</li>
+                    </ul>
+
+                    <h2 class="privacy-title-second">5. Передача данных третьим лицам</h2>
+                    <p>Мы не передаем персональные данные третьим лицам, за исключением следующих случаев:</p>
+                    <ul>
+                        <li>Если это необходимо для предоставления услуг.</li>
+                        <li>По запросу государственных органов в рамках закона.</li>
+                        <li>С согласия пользователя.</li>
+                    </ul>
+
+                    <h2 class="privacy-title-second">6. Права пользователя</h2>
+                    <ul>
+                        <li>Получение информации о собранных данных.</li>
+                        <li>Запрос на изменение или удаление данных.</li>
+                        <li>Отзыв согласия на обработку персональных данных.</li>
+                    </ul>
+
+                    <h2 class="privacy-title-second">7. Использование файлов cookie</h2>
+                    <p>Сайт использует файлы cookie для удобства пользователей и сбора аналитической информации.
+                        Пользователь может
+                        отключить cookie в настройках браузера, однако это может ограничить функциональность Сайта.</p>
+
+                    <h2 class="privacy-title-second">8. Сроки хранения данных</h2>
+                    <p>Данные хранятся до достижения целей их обработки. После этого они удаляются или обезличиваются.
+                    </p>
+
+                    <h2 class="privacy-title-second">9. Изменения в Политике</h2>
+                    <p>Компания <strong>Anwalt</strong> оставляет за собой право изменять Политику. Актуальная версия
+                        всегда доступна на
+                        Сайте.</p>
+
+                    <h2 class="privacy-title-second">10. Контакты</h2>
+
+                    <p>Email: <a href="mailto:info@anwalt.kz">info@anwalt.kz</a></p>
+                    <p>Телефон:<a href="tel:+77710309374">+7 ( 771 )
+                            030-93-74</a></p>
+                    <p>Адрес: г. Алматы,
+                        ул. Джандарбекова, <br> д. 238/91 к. 1. БЦ Аблай. Офис 207</p>
+
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+    <aside class="aside js-aside">
+        <ul class="aside__list list-none">
+            <li class="aside__item aside-icon">
+                <a class="aside__link link--style link--absolute link--btn" href="tel:+77710309374">
+                    <span class="aside-phone" title="Позвонить в Anwalt">+7 (771) 030-93-74</span></a>
+            </li>
+            <li class="aside__item aside-icon">
+                <a class="aside__link link--style link--btn link--absolute" href="https://wa.me/77710309374"
+                    aria-label="WhatsApp" target="_blank" rel="noopener" aria-label="Написать сообщение в WhatsApp"
+                    title="Написать сообщение в WhatsApp">
+                </a>
+            </li>
+
+            <li class="aside__item aside-icon">
+                <button class="header__btn btn btn--menu btn--h  btn--radius50  js-open-menu"
+                    aria-label="Open menu"></button>
+            </li>
+        </ul>
+
+        <ul class="aside__socials  list-none">
+            <li class="socials__item socials-icon">
+                <a class="menu__social-link link--absolute link--btn btn--radius50"
+                    href="https://www.instagram.com/anwaltpro/" aria-label="Instagram" target="_blank" rel="noopener">
+                </a>
+            </li>
+            <li class="socials__item socials-icon">
+                <a class="menu__social-link link--absolute link--btn btn--radius50" href="https://wa.me/77710309374"
+                    aria-label="WhatsApp" target="_blank" rel="noopener">
+                </a>
+            </li>
+            <li class="socials__item socials-icon">
+                <a class="menu__social-link link--absolute link--btn btn--radius50" href="https://t.me/Awaltpro"
+                    aria-label="Telegram" target="_blank" rel="noopener">
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <section class="contact-form section-p" id="form">
+        <div class="contact-bg"></div>
+        <div class="container">
+            <div class="contact-form__container">
+                <div class="form-bg"></div>
+                <h2 class="contact-form__title title--second playfair-400"> <span
+                        class="uppercase title--second-big">Запишитесь</span> <br>
+                    на бесплатную консультацию</h2>
+
+                <form class="contact-form__form form z-ix-10 js-form" action="#" method="post">
+                    <fieldset class="form__group">
+                        <input class="form__input input--size input--font js-name" type="text" name="name" required
+                            placeholder="Ваше Имя*:">
+                        <input class="form__input input--size input--font js-phone" type="tel" name="phone" required
+                            placeholder="Телефон*: +7 (___) ___-__-__">
+                        <textarea class="form__textarea form__input input--font js-message" name="message"
+                            placeholder="Сообщение"></textarea>
+                    </fieldset>
+
+                    <div class="form__btn-container  btn-container--form ">
+                        <span class="btn-line-team btn-line "></span>
+                        <button class="team-member__link btn link link--main link--second uppercase"
+                            type="submit">Отправить</button>
+                        <span class="btn-line-team btn-line2"></span>
+                    </div>
+                    <div class="text-center  text-small opacity-05"><small>*Обязательнo к заполнению</small>
+                    </div>
+                </form>
+                <div id="response-message" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts section-p section-bg" id="contacts">
+        <div class="container">
+            <h2 class="contacts__title title--second-raleway uppercase">Наши контакты</h2>
+            <div class="cotacts__wrap">
+                <div class="address__wrap">
+                    <h3 class="address__title title-third playfair-400 color-gold">Свяжитесь с нами:</h3>
+                    <address class="contacts__address">
+                        <ul class="contacts__list list-address list-none">
+                            <li class="contacts__item">
+                                <span class="contacts__phone-text color-gold text-small">Телефон: </span>
+                                <a class="contacts__link link  link--h" href="tel:+77710309374">+7 ( 771 )
+                                    030-93-74</a>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__phone-text color-gold text-small">Email:</span>
+                                <a class="contacts__link link link--h" href="mailto:info@anwalt.kz">info@anwalt.kz</a>
+                            </li>
+                            <li class="contacts__item ">
+                                <p class="contacts__text color-gold mb-2">Мы в соц.сетях:</p>
+                                <ul class="contacts__socials socials list-none">
+                                    <li class="socials__item socials-icon">
+                                        <a class="menu__social-link link--absolute"
+                                            href="https://www.instagram.com/anwaltpro/" aria-label="Instagram"
+                                            target="_blank" rel="noopener">
+                                        </a>
+                                    </li>
+                                    <li class="socials__item socials-icon">
+                                        <a class="menu__social-link link--absolute" href="https://wa.me/77710309374"
+                                            aria-label="WhatsApp" target="_blank" rel="noopener">
+                                        </a>
+                                    </li>
+                                    <li class="socials__item socials-icon">
+                                        <a class="menu__social-link link--absolute" href="https://t.me/Awaltpro"
+                                            aria-label="Telegram" target="_blank" rel="noopener">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="contacts__list list-none">
+                            <li class="contacts__item ">
+                                <p class="footer__address"> <span
+                                        class="contacts__phone-text color-gold text-small">Адрес:</span> г. Алматы,
+                                    ул. Джандарбекова, <br> д. 238/91 к. 1. БЦ Аблай. Офис 207</p>
+                            </li>
+                            <li class="contacts__item">
+                                <p class="contacts__text color-gold mb-2">Построить путь в:</p>
+                                <ul class="address__list list-none ">
+                                    <li class="address__item map-icon">
+
+                                        <a class="address__link link link--absolute"
+                                            href="https://www.google.ru/maps/dir//43.2257652,76.9001623/@43.2258204,76.8589629,13z/data=!4m4!4m3!1m0!1m1!4e1?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+                                            aria-label="Google map" target="_blank" rel="noopener">
+                                            Google
+                                        </a>
+                                    </li>
+                                    <li class="address__item  map-icon">
+                                        <a class="address__link link link--absolute"
+                                            href="https://yandex.kz/maps/ru/162/almaty/?ll=76.900668%2C43.226190&mode=routes&rtext=~43.225654%2C76.900126&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D196992634419&z=18"
+                                            aria-label="Yandex map" target="_blank" rel="noopener">
+                                            Yandex
+                                        </a>
+                                    </li>
+                                    <li class="address__item  map-icon">
+                                        <a class="address__link link link--absolute"
+                                            href="https://2gis.kz/almaty/directions/points/%7C76.900162%2C43.225769%3B9430047375172623?m=76.900157%2C43.225646%2F18"
+                                            aria-label="2Gis map" target="_blank" rel="noopener">
+                                            2Gis
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="contacts__schedule mobile-none schelule--border">
+                    <h3 class="contacts__title title-third color-gold playfair-400">График работы:</h3>
+                    <ul class="contacts__schedule-list list-none">
+                        <li class="schedule__item">Понедельник: <span class="schedule__dots"></span> 09:00 - 18:00
+                        </li>
+                        <li class="schedule__item">Вторник: <span class="schedule__dots"></span> 09:00 - 18:00</li>
+                        <li class="schedule__item">Среда: <span class="schedule__dots"></span> 09:00 - 18:00</li>
+                        <li class="schedule__item">Четверг: <span class="schedule__dots"></span> 09:00 - 18:00</li>
+                        <li class="schedule__item">Пятница: <span class="schedule__dots"></span> 09:00 - 18:00</li>
+                        <li class="schedule__item color-gold bold">Суббота
+                            <span class="schedule__dots"></span> Выходной
+                        </li>
+                        <li class="schedule__item color-gold bold">Воскресенье <span class="schedule__dots"></span>
+                            Выходной</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer section-bg">
+        <div class="container">
+            <div class="footer__logo">
+                <div class="break-logo">
+                    <span class="break-logo__line break-line--after break-line-gold"></span>
+                    <a href="/" class="link link--logo">
+                        <img class="break-logo__logo" src="/img/logo.svg" alt="LOGO" loading="lazy">
+                    </a>
+                    <span class="break-logo__line break-line--before break-line-gold"></span>
+                </div>
+            </div>
+
+            <ul class="footer__menu menu__list list-none">
+                <li class="menu__item"><a class="menu__link link link--h color-gold" href="/">Главная</a></li>
+                <li class="menu__item"><a class="menu__link link link--h color-gold" href="#about">О нас</a></li>
+                <li class="menu__item"><a class="menu__link link link--h color-gold" href="#services">Услуги</a></li>
+                <li class="menu__item"><a class="menu__link link link--h color-gold" href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer__copyright text-center">
+            <a class="privacy__link" href="privacy">Политика
+                конфиденциальности</a>
+            <small class="t-small"> | © <span class="js-year">2024</span> TOO
+                «Anwalt»</small>
+        </div>
+    </footer>
+
+    <div class=" popup js-popup" role="dialog" aria-modal="true">
+        <div class="popup__dialog">
+            <div class="popup__header">
+                <button class="modal__btn btn btn--h btn--close btn--radius50 js-close-btn"
+                    aria-label="Закрыть модальное окно" type="button"></button>
+
+            </div>
+            <div class="popup__body">
+                <h4 class="popup__title playfair-400 gradient-text">Заявка успешно отправлена.</h4>
+
+                <p class="popup__text" id="response-message">В ближайшее <span class="color-gold">рабочее</span> время
+                    мы
+                    свяжемся с вами!
+                </p>
+                <div id="response-message2" style="display: none;"></div>
+
+            </div>
+            <div class="popup__logo break-logo">
+                <span class="line-left  break-line--after break-line-gold"></span>
+                <picture>
+                    <source srcset="img/logo-b-mobile.svg" media="(max-width: 600px)">
+                    <img class="popup__logo logo-img" src="img/logo.svg" alt="Логотип Anwalt" loading="lazy">
+                </picture>
+                <span class="line-right  break-logo__line break-line--before break-line-gold"></span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="services__modal modal js-modal" role="dialog" aria-modal="true">
+        <div class="modal__container">
+            <button class="modal__btn btn btn--h btn--close btn--radius50 js-close-btn"
+                aria-label="Закрыть модальное окно" type="button"></button>
+
+            <div class="modal__header">
+                <h3 class="modal__title-third gradient-text playfair-400 js-first-title"></h3>
+                <h4 class="modal__title-main playfair-600 js-modal-title"></h4>
+                <h5 class="modal__title-second color-gold">Тарифы:</h5>
+            </div>
+            <ul class="modal__list  list-none js-list-modal">
+
+            </ul>
+        </div>
+    </div>
+
+    <template class="js-template-item">
+        <li class=" item-font js-modal-card-item"></li>
+    </template>
+
+    <template class="js-teplate">
+        <li class="modal__item modal-item">
+            <h5 class="modal-item__title gradient-text-mirror  js-title-card-modal playfair-600"></h5>
+            <ul class="js-modal-card-list"></ul>
+            <p class="modal-item__content js-modal-card-description"></p>
+            <p class="modal-item__content js-modal-card-text"></p>
+        </li>
+    </template>
+
+
+</body>
+
+</html>

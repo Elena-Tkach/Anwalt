@@ -2,9 +2,19 @@
   .title--first {
     font-size: 28px;
   }
+
+  .title-privacy {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 768px) {
+  .title-privacy {
+    font-size: 28px;
+  }
+  .container__privacy-intro {
+    padding: 60px 40px;
+  }
   .title--first {
     font-size: clamp(1.5rem, 3vw + 1rem, 4rem);
   }
@@ -547,16 +557,16 @@
     position: relative;
   }
 
-  .footer::after {
+  /* .footer::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
-    opacity: 0.5;
+    opacity: 1;
     background-color: var(--blue-dark);
-  }
+  } */
 
   .footer .break-logo {
     transform: translate3d(0, -42px, 0);
